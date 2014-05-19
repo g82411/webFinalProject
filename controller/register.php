@@ -15,7 +15,7 @@ if(!mysql_fetch_array(mysql_query("SELECT ID,nickname FROM user where ID=".$user
 }
 else{	
 	mysql_query("INSERT INTO user(ID,password,nickname,Language,profession)
-	VALUES(".$username.",".$passwd.",".$nickname.",".$language.",".$profession.")")
+	VALUES(".$username.",".$passwd.",".$nickname.",".$language.",".$profession.");");
 	echo 'input_sucess';
 }
 mysql_close();
