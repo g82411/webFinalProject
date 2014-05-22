@@ -1,13 +1,8 @@
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
+<link href="css/index.css" rel="stylesheet">
 <meta charset="UTF-8">
- <style type="text/css"> 
-    table {border-style:double;} 
-	td {border-style:double;width:49%;left:33%;} 
-	tr {border-style:double;} 
- </style> 
 </head>
 
 <body>
@@ -65,15 +60,16 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<table>
+<table id="table1">
 <tr><td>1</td><td>1</td><td>1</td></tr>
 
 </table>
 
-<div></div>
-<div></div>
 
+<div id="hot">熱門</div>
+<div id="newbook" >新書</div>
 
+<div id="sidebar">SIDEBAR</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
