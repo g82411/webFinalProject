@@ -1,0 +1,44 @@
+
+#introduction{
+	width:500px; 
+	height:400px; 
+	background-color:rgba(255,255,255,.5);
+	position:relative;
+	top:100px;
+	left:80px; 
+	-webkit-border-radius: 30px;
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-radius: 30px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#inputGrp{
+	position: relative;
+	left: 52%;
+	top: -128px;
+	width: 40%;
+}
+#emailInput{
+	top:-95px;
+}
+.form-control{
+	height:35px;
+}
+
+.input-group-addon{
+	font-size: 24px;
+}
+
+.book-cover{
+	position: relative;
+	height:220px;
+	width:200px;
+}
+
+.book-cover-place{
+	position: relative;
+	left: 10%;
+	width:200px;
+}
