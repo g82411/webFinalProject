@@ -1,16 +1,7 @@
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
-<head>
-<script type="text/javascript"> </script>
-   
- <style type="text/css"> 
-    table {border-style:double;} 
-	td {border-style:double;width:300} 
-	tr {border-style:double;width:300} 
-	
-	</style> 
+<link rel="stylesheet" type="text/css" href="./css/book.css">
 </head>
 
 <body>
@@ -67,9 +58,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<table style="width:60% ;height:320px;position:relative;top:3%; left:20%; "><tr><td>
-<div style="width:200px; height:300px; background-color:red;position:relative;top:10%; left:10%; ">BK</div>
-<table style="position:absolute;top:3%; left:30%; ">
+<table id="table1" ><tr><td>
+<div id="div1">BK</div>
+<table id="table2">
 <tr>
 <td><p>®Ñ¦W</p></td>
 <td><p>1</p></td>
@@ -109,7 +100,7 @@
 </table>
 
 </td></tr></table>
-<table style="width:60% ;height:320px;position:relative;top:5%; left:20%; ">
+<table id="table3">
 <tr>
 <td>Commit</td>
 <td>Data</td>
