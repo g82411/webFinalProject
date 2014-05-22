@@ -1,0 +1,47 @@
+#id{
+	width:300px;
+	height:50px;
+	position:relative;
+	top:-290px;
+	left:600px;
+}
+
+#password{
+	width:300px;
+	height:50px;
+	position:relative;
+	top:-290px;
+	left:600px; 
+}
+
+#recheckpassword{
+	width:300px; 
+	height:50px;
+	position:relative;
+	top:-290px;
+	left:600px; 
+}
+
+#nickname{
+	width:300px;
+	height:50px;
+	position:relative;
+	top:-290px; 
+	left:600px;
+}
+
+#email{
+	width:300px;
+	height:50px;
+	position:relative;
+	top:-290px; 
+	left:600px;
+}
+
+#register{
+	width:100px; 
+	height:50px;
+	position:relative;
+	top:-230px; 
+	left:700px;
+}
