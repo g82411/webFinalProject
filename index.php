@@ -16,7 +16,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Index.php">首頁</a> <!--NavBar 首頁按鈕 -->
+      <a class="navbar-brand" href="index.php">首頁</a> <!--NavBar 首頁按鈕 -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,14 +60,46 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<table id="table1">
+<table id="table5">
 <tr><td>1</td><td>1</td><td>1</td></tr>
 
 </table>
 
 
 <div id="hot">熱門</div>
-<div id="newbook" >新書</div>
+<div id="newbook" >
+<table id="table1" ><tr><td>
+<div id="div1">BK</div>
+<table id="table2">
+<tr>
+<td><p>書名</p></td>
+<td><p>1</p></td>
+<td><p>日期</p></td>
+<td><p>1</p></td>
+<td><p>resource</p></td>
+<td><p>1</p></td>
+
+</tr>
+<tr>
+<td><p>作者</p></td>
+<td><p>2</p></td>
+<td><p>commit數</p></td>
+<td><p>2</p></td>
+<td><p>type</p></td>
+<td><p>2</p></td>
+</tr>
+<tr>
+<td><p>ISBN</p></td>
+<td><p>3</p></td>
+<td><p>提供者</p></td>
+<td><p>3</p></td>
+<td><p>Language</p></td>
+<td><p>3</p></td>
+</tr>
+
+</table>
+
+</td></tr></table></div>
 
 <div id="sidebar">SIDEBAR</div>
 
