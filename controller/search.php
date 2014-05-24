@@ -1,6 +1,7 @@
 <?php
 	require 'connect.php';
 	$search_string = mysql_real_escape_string($_POST['search_string']);
+	$search_string = htmlentities($search_string , ENT_NOQUOTES,"UTF-8");
 	//mysql_query($search_string);
 	//$result = mysql_query($con, "SELECT * FROM USER");
 	//while($row = mysqli_fetch_array($result)) {
