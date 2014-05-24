@@ -1,5 +1,5 @@
-$("#regeister").click(function(){
-  document.location.href="./regeister.php";
+$("#register").click(function(){
+  document.location.href="./register.php";
 });
 
 
