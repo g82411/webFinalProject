@@ -3,7 +3,7 @@ session_start();
 require 'connect.php';
 $username = mysql_real_escape_string($_POST['username']);
 $passwd = mysql_real_escape_string($_POST['password']);
-$result=mysql_query("SELECT * FROM user WHERE username=".$username." and password =".$passwd.";" );
+$result=mysql_query("SELECT * FROM User WHERE username=".$username." and password =".$passwd.";" );
 if(mysql_fetch_array($result)){
 	$jsonRseponse = array("Cookie" => $result['Cookie'],
 		"confirm" => True);
