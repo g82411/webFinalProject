@@ -1,6 +1,7 @@
 <?php
 require 'connect.php';
-while($bookDump=mysql_fetch_array(mysql_query("SELECT * FROM Book;"))){
+$resultA=mysql_query("SELECT * FROM Book;");
+while($bookDump=mysql_fetch_array($resultA)){
 	echo $bookDump['bookTitle'];
 	echo $bookDump['author'];
 	echo $bookDump['ISBN'];
