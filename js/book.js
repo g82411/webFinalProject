@@ -4,6 +4,6 @@ $(function(){
     url: "./controller/book.php",
   })
   .done(function(data) {
-      $('#tablse2').html(data);
+      $('#table2').html(data);
   })
 });
