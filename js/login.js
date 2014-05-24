@@ -1,5 +1,5 @@
 $("#register").click(function(){
-  document.location.href="./register.php";
+  document.location.href="../register.php";
 });
 
 
