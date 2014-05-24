@@ -6,4 +6,4 @@ $(function(){
   .done(function(data) {
       $('#tablse2').html(data);
   })
-}
+});
