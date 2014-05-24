@@ -1,8 +1,8 @@
 <?php
-mysql_connect("localhost","webFinalSite","vXwyp9U8C2hTnRW9");
+$con=mysql_connect("127.0.0.1","root","webroot");
 if (!$con)
   {
-  die('Could not connect: ' . mysql_error());
+  die('Could not connect: '.mysql_error());
   }
  mysql_select_db("webFinal", $con);
 ?>
