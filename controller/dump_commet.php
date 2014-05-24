@@ -2,7 +2,7 @@
 <?php
 require 'connect.php';
 
-while($commitResult=mysql_fetch_array(mysql_query("SELECT CID,BID,UID,title,content,date FROM commit;"))){
+while($commitResult=mysql_fetch_array(mysql_query("SELECT * FROM commit;"))){
 $username=mysql_fetch_array(mysql_query("SELECT username FROM User where UID=".$commitResult['UID'].";"));
 echo  "<div class=\"accordion-group\">";
 echo  "<div class=\"accordion-heading\">"; 
