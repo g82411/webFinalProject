@@ -6,12 +6,11 @@ border-style:double;
 left:33%;
 } 
 #hot{
-	width:500px; 
-	height:400px; 
+	width:500px;
 	background-color:rgba(255,255,255,.5);
 	position:absolute;
 	top:30%;
-	left:280px; 
+	left:12%; 
 	-webkit-border-radius: 30px;
 	-webkit-border-top-right-radius: 2px;
 	-webkit-border-bottom-left-radius: 2px;
@@ -24,7 +23,7 @@ left:33%;
 #newbook{
 	width:500px; 
 	height:400px; 
-	background-color:rgba(255,255,255,.5);
+	/*background-color:rgba(255,255,255,.5);*/
 	position:absolute;
 	top:30%;
 	left:980px; 
@@ -34,39 +33,40 @@ left:33%;
 	border-radius: 30px;
 	border-top-right-radius: 2px;
 	border-bottom-left-radius: 2px;
-
 }
 
 #table5{
-width:50%;
-	position:absolute;
+	width:60%;
+	position:fixed;
 	top:13%;
 	left:20%;
 }
 
 #div1{
-width:100px; 
-height:150px; 
-background-color:red;
-position:relative;
-
+	width:100px; 
+	height:150px; 
+	background-color:red;
+	position:relative;
 }
+
 #table1{
-width:100%;
-height:10%;
-
-} 
-#table2{
-font-size:9px;
-position:relative;
-left:25%;
-
+	position:relative;
+	right:40%;
+	width:100%;
+	height:10%;
 }
+
+#table2{
+	font-size:9px;
+	position:relative;
+	left:25%;
+}
+
 #sidebar{
-width:10%;
-height:20%;
-background-color:red;
-position:fixed;
-top:30%;
-left:90%;
+	width:10%;
+	height:20%;
+	background-color:red;
+	position:fixed;
+	top:30%;
+	left:90%;
 }
