@@ -1,10 +1,10 @@
 $(function(){ 
   $.ajax({
     type: "GET",
-    url: "./controller/book.php",
+    url: "controller/book.php",
     dataType:'text';
   })
   .done(function(test) {
-      $('#test').html(test);
+      $('#table2').html(test);
   })
 })
