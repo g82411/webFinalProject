@@ -4,6 +4,16 @@ $(function(){
     url: "./controller/book.php",
   })
   .done(function(data) {
-      $('#table2').html(data);
+  		data=JSON.parse(data);
+      $('#table2').html('<tr><td><p>書名</p></td><td><p>'+data.bookTitle+'</p></td></tr>'+
+      	'<tr><td><p>作者</p></td><td><p>'+data.author+'</p></td></tr>'+
+      	'<tr><td><p>ISBN</p></td><td><p>'+data.ISBN+'</p></td></tr>'+
+    	'<tr><td><p>日期</p></td><td><p>'+data.date+'</p></td></tr>'+
+    	'<tr><td><p>commit數</p></td><td><p>'+data.hot+'</p></td></tr>'+
+    	'<tr><td><p>提供者</p></td><td><p>'+data.author+'</p></td></tr>'+
+    	'<tr><td><p>resource</p></td><td><a href=\"'+data.resource+'\">'+data.resource+'</a></td></tr>'+
+    	'<tr><td><p>type</p></td><td><p>'+data.type+'</p></td></tr>'+
+    	'<tr><td><p>Language</p></td><td><p>'+data.Language+'</p></td></tr>'
+      	);
   })
 });
