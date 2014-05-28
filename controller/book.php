@@ -1,6 +1,7 @@
 <?php
 require 'connect.php';
-$resultA=mysql_query("SELECT * FROM Book;");
+$bid=$_GET['bid'];
+$resultA=mysql_query("SELECT * FROM Book where BID='".$bid."';");
 	while($bookDump=mysql_fetch_array($resultA)){
 		echo json_encode($bookDump);
 	}

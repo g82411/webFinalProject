@@ -1,7 +1,15 @@
+var url=window.location.toString();
+if(url.indexOf("#")!=-1){
+    var ary=url.split("#")[1].split("=")[1]; 
+}
+else{
+    document.location.href="./index.html";
+}
+var bid=ary;
 $(function(){ 
   $.ajax({
     type: "GET",
-    url: "./controller/book.php",
+    url: "./controller/book.php?bid="+bid
   })
   .done(function(data) {
   		data=JSON.parse(data);
@@ -15,5 +23,6 @@ $(function(){
     	'<tr><td><p>type</p></td><td><p>'+data.type+'</p></td></tr>'+
     	'<tr><td><p>Language</p></td><td><p>'+data.Language+'</p></td></tr>'
       	);
+      
   })
 });
