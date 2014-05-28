@@ -1,15 +1,6 @@
-#table2{
-	width:71%;
-}
-table {
-border-style:double;
-} 
 td {
-border-style:double;width:250
+width:250
 } 
-tr {
-border-style:double;
-}
 #bookInformation{
 width:60%;
 height:320px;
@@ -19,14 +10,15 @@ left:20%;
 } 
 #table2{
 position:absolute;
-top:13%;
+top:8%;
 left:28%;
+width:71%;
 }
 #table3{
 width:60%;
 height:320px;
 position:relative;
-top:35%;
+top:25%;
 left:20%;
 }
 #div1{
