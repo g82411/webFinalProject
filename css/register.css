@@ -1,74 +1,83 @@
-#id{
-	width:440px;
-	height:50px;
-	position:relative;
-	top:100px;
-	left:1600px;
+#username{
+position:relative;
+width:300px;
+left:750px;
+top:100px;
+}
+#Username{
+position:relative;
+width:200px;
+left:750px;
+top:100px;
 }
 
 #password{
-	width:440px;
-	height:50px;
-	position:relative;
-	top:100px;
-	left:1400px; 
+position:relative;
+width:300px;
+left:750px;
+top:120px;
+}
+#Password{
+position:relative;
+width:200px;
+left:750px;
+top:120px;
 }
 
 #recheckpassword{
-	width:440px; 
-	height:50px;
-	position:relative;
-	top:100px;
-	left:1400px; 
+position:relative;
+width:300px;
+left:750px;
+top:140px;
+}
+#Recheckpassword{
+position:relative;
+width:200px;
+left:750px;
+top:140px;
 }
 
 #nickname{
-	width:440px;
-	height:50px;
-	position:relative;
-	top:100px; 
-	left:1400px;
+position:relative;
+width:300px;
+left:750px;
+top:160px;
+}
+#Nickname{
+position:relative;
+width:200px;
+left:750px;
+top:160px;
 }
 
 #email{
-	width:440px;
-	height:50px;
-	position:relative;
-	top:100px; 
-	left:1400px;
+position:relative;
+width:300px;
+left:750px;
+top:180px;
 }
-
 #Email{
-	position:relative;
-	top:100px; 
-	left:1400px;	
-
+position:relative;
+width:200px;
+left:750px;
+top:180px;
 }
 
 
 #register{
-	width:100px; 
-	height:50px;
-	position:relative;
-	top:100px; 
-	left:1400px;
+position:relative;
+left:720px;
+top:250px;
 }
 
 #language{
-	width:100px; 
-	height:20px;
-	position:relative;
-	top:100px; 
-	left:1400px;
+position:relative;
+left:790px;
+top:200px;
 }
 
 #profession{
-	width:100px; 
-	height:20px;
-	position:relative;
-	top:100px; 
-	left:1400px;
+position:relative;
+left:910px;
+top:200px;
 }
-
-
-
