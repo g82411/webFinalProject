@@ -1,7 +1,7 @@
 $("#register").click(function(){
   $.post("./controller/register.php",
   {
-    "username":$('input[id="username"]').val(),
+    "username":$('input[id="id"]').val(),
     "password":$('input[id="password"]').val(),
     "nickname":$('input[id=nickname]').val(),
     "language":$("#language").find(":selected").text(),
