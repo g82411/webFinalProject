@@ -1,5 +1,5 @@
 $("#register").click(function(){
-  $.post("register.php",
+  $.post("./controller/register.php",
   {
     "username":$('input[id="ID"]').val(),
     "password":$('input[id="password"]').val(),
