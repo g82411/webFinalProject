@@ -5,11 +5,11 @@ $("#register").click(function(){
     "password":$('input[id="password"]').val(),
     "nickname":$('input[id=nickname]').val(),
     "language":$("#language").find(":selected").text(),
-    "email":$('input[id=email]').val(),
+	"profession":$("#profession").find(":selected").text(),
+    "email":$('input[id=email]').val()
     
 
 
-    city:"Duckburg"
   },
   function(data,status){
     alert("Data: " + data + "\nStatus: " + status);

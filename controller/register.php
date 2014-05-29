@@ -2,6 +2,18 @@
 <?php
 require 'connect.php';
 $username = mysql_real_escape_string($_POST['username']);
+$password = mysql_real_escape_string($_POST['password']);
+$nickname = mysql_real_escape_string($_POST['nickname']);
+$language = mysql_real_escape_string($_POST['language']);
+$profession = mysql_real_escape_string($_POST['$profession']);
+$email = mysql_real_escape_string($_POST['email']);
+
+
+mysql_query("INSERT INTO User(ID,password,nickname,Language,profession)
+	VALUES(".$username.",".$password.",".$nickname.",".$language.",".$email.",".$profession.");");
+echo 'inputed';
+
+/*$username = mysql_real_escape_string($_POST['username']);
 $username = htmlentities($username, ENT_NOQUOTES,"UTF-8");
 $passwd = mysql_real_escape_string($_POST['password']);
 $passwd = htmlentities($passwd, ENT_NOQUOTES,"UTF-8");
@@ -22,6 +34,6 @@ else{
 	mysql_query("INSERT INTO User(ID,password,nickname,Language,profession)
 	VALUES(".$username.",".$passwd.",".$nickname.",".$language.",".$profession.");");
 	echo 'input_sucess';
-}
+}*/
 mysql_close();
 ?>
