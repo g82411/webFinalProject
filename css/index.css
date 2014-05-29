@@ -6,8 +6,9 @@ border-style:double;
 left:33%;
 } 
 #hot{
-	width:500px;
-	background-color:rgba(255,255,255,.5);
+	width:33%;
+	height:69%;
+	background-color:rgba(255,255,255,0);
 	position:absolute;
 	top:30%;
 	left:12%; 
@@ -21,12 +22,13 @@ left:33%;
 }
 
 #newbook{
-	width:500px; 
-	height:400px; 
-	/*background-color:rgba(255,255,255,.5);*/
+	width:33%; 
+	height:69%; 
+	background-color:rgba(255,255,255,0);
 	position:absolute;
 	top:30%;
 	left:980px; 
+	border:rgba(255,255,255,0.3) 1px solid;
 	-webkit-border-radius: 30px;
 	-webkit-border-top-right-radius: 2px;
 	-webkit-border-bottom-left-radius: 2px;
@@ -48,21 +50,6 @@ left:33%;
 	position:relative;
 	top:1;
 	left:1%;
-}
-
-#table1{
-	position:relative;
-	right:40%;
-	width:100%;
-	height:10%;
-}
-
-#table2{
-	font-size:9px;
-	position:relative;
-	left:40%;
-	top:-180px;
-	width:220px;
 }
 
 #sidebar{
