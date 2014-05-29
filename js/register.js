@@ -12,7 +12,7 @@ $("#register").click(function(){
 
   },
   function(data,status){
-	alert($('input[id="username"]').val());
+	alert($('input[id="id"]').val());
 	alert($('input[id="password"]').val());
 	alert($('input[id="nickname"]').val());
     alert($("#language").find(":selected").text());
