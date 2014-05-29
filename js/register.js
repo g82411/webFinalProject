@@ -12,6 +12,6 @@ $("#register").click(function(){
 
   },
   function(data,status){
-    alert("Data: " + data + "\nStatus: " + status);
+    alert(data);
   });
 });

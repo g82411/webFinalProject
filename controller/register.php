@@ -9,8 +9,8 @@ $profession = mysql_real_escape_string($_POST['$profession']);
 $email = mysql_real_escape_string($_POST['email']);
 
 
-mysql_query("INSERT INTO User(ID,password,nickname,Language,profession)
-	VALUES(".$username.",".$password.",".$nickname.",".$language.",".$email.",".$profession.");");
+mysql_query("INSERT INTO User(username,password,nickname,Language,email,profession)
+	VALUES('".$username."','".$password."','".$nickname."','".$language."','".$email."','".$profession."');");
 echo 'inputed';
 
 /*$username = mysql_real_escape_string($_POST['username']);
