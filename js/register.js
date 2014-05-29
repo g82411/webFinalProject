@@ -1,7 +1,7 @@
 $("#register").click(function(){
   $.post("./controller/register.php",
   {
-    "username":$('input[id="ID"]').val(),
+    "username":$('input[id="username"]').val(),
     "password":$('input[id="password"]').val(),
     "nickname":$('input[id=nickname]').val(),
     "language":$("#language").find(":selected").text(),
@@ -12,6 +12,11 @@ $("#register").click(function(){
 
   },
   function(data,status){
-    alert(data);
+	alert($('input[id="username"]').val());
+	alert($('input[id="password"]').val());
+	alert($('input[id="nickname"]').val());
+    alert($("#language").find(":selected").text());
+    alert($("#profession").find(":selected").text());
+	alert($('input[id="email"]').val());
   });
 });
