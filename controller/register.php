@@ -7,11 +7,25 @@ $nickname = mysql_real_escape_string($_POST['nickname']);
 $language = mysql_real_escape_string($_POST['language']);
 $profession = mysql_real_escape_string($_POST['$profession']);
 $email = mysql_real_escape_string($_POST['email']);
+/*
+$checkUsername=mysql_query("SELECT username FROM user");
+if($username=mysql_fetch_array($checkUsername)){
+	echo $username'have been used';
+}
 
+$checkNickname=mysql_query("SELECT nickname FROM user");
+if($nickname=mysql_fetch_array($checkNickname)){
+	echo $nickname'have been used';
+}
 
-mysql_query("INSERT INTO User(username,password,nickname,Language,email,profession)
-	VALUES('".$username."','".$password."','".$nickname."','".$language."','".$email."','".$profession."');");
-echo $language;
+$checkEmail=mysql_query("SELECT email FROM user");
+if($email=mysql_fetch_array($checkEmail)){
+	echo $email'have been used';
+}
+*/
+mysql_query("INSERT INTO User(username,password,nickname,Language,profession,email)
+	VALUES('".$username."','".$password."','".$nickname."','".$language."','".$profession."','".$email."');");
+echo $profession;
 
 /*$username = mysql_real_escape_string($_POST['username']);
 $username = htmlentities($username, ENT_NOQUOTES,"UTF-8");
