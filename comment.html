@@ -67,9 +67,18 @@
       <div class="book-cover-place">
         <img class="book-cover" src="img/lost_book.png" />
       </div>
+      <div>
+        <form>
+          <textarea cols="80" rows="10" id="editor" name="content"></textarea>
+          <script type="text/javascript">
+            CKEDITOR.replace('editor',{skin:'v2',toolbar:'SAMPLE',width:'630',height:'350',filebrowserImageUploadUrl:'/ImgUpload.jsp'}); 
+          </script>
+        </form>
+      </div>
     </div>
   </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
   <!-- <script src="js/navbar.js"></script> -->
 </html>
