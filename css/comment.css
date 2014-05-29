@@ -46,5 +46,9 @@
 .book-title{
 	position: relative;
 	left:40%;
+}
 
+.msgbox{
+	position: relative;
+	left:30%;
 }

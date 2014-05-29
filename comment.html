@@ -68,17 +68,20 @@
         <img class="book-cover" src="img/lost_book.png" />
       </div>
       <div>
-        <form>
-          <textarea cols="80" rows="10" id="editor" name="content"></textarea>
-          <script type="text/javascript">
-            CKEDITOR.replace('editor',{skin:'v2',toolbar:'SAMPLE',width:'630',height:'350',filebrowserImageUploadUrl:'/ImgUpload.jsp'}); 
-          </script>
-        </form>
+        <asp:TextBox ID="txtEditor" TextMode="MultLine" CssClass="ckeditor" runat="server"></asp:TextBox>
+          <br />
+          <br />
+          <asp:Button ID="btnSubmit" runat="server" Text="確定" onclick="btnSubmit_Click" />
+          <br />
+          <br />
+          <asp:Label ID="lblDisplay" runat="server" Text="Label"></asp:Label>
       </div>
     </div>
   </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script> 
+  <script src="js/comment.js"></script>
+  <!-- <script type="text/javascript" src="Scripts/jquery-1.4.1-vsdos.js"></script> -->
   <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
-  <!-- <script src="js/navbar.js"></script> -->
+  <script type="text/javascript" src="ckeditor/adapters/jquery.js"></script>
 </html>
