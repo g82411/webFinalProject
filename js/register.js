@@ -1,17 +1,18 @@
 $("#register").click(function(){
-  $.post("register.php",
+  $.post("./controller/register.php",
   {
-    "username":$('input[id="ID"]').val(),
+    "username":$('input[id="id"]').val(),
     "password":$('input[id="password"]').val(),
-    "nickname":$('input[id=nickname]').val(),
+    "nickname":$('input[id="nickname"]').val(),
     "language":$("#language").find(":selected").text(),
-    "email":$('input[id=email]').val(),
+	"profession":$("#profession")..find(":selected").text(),
+    "email":$('input[id="email"]').val()
     
 
 
-    city:"Duckburg"
   },
   function(data,status){
-    alert("Data: " + data + "\nStatus: " + status);
+	alert($("#profession")..find(":selected").text());
+	alert($("#language").find(":selected").text());
   });
 });
