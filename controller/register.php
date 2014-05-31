@@ -11,10 +11,17 @@ if(!$username||!$password||!$nickname||!$language||!$profession||$email){
 echo"NullValue!!";
 }
 else{
-$checkUsername=mysql_query("SELECT username FROM user");
+$standard = "/^[\w]*@[\w-]+(\.[\w-]+)+$/" ;
 
+if(preg_match($standard, $email, $check)) {
 
+              echo"錯誤的Email格式";
+
+           }
+
+       }
 }
+
 /*
 $checkUsername=mysql_query("SELECT username FROM user");
 if($username=mysql_fetch_array($checkUsername)){
