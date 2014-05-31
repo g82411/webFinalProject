@@ -5,7 +5,7 @@ $username = mysql_real_escape_string($_POST['username']);
 $password = mysql_real_escape_string($_POST['password']);
 $nickname = mysql_real_escape_string($_POST['nickname']);
 $language = mysql_real_escape_string($_POST['language']);
-$profession = mysql_real_escape_string($_POST['$profession']);
+$profession = mysql_real_escape_string($_POST['profession']);
 $email = mysql_real_escape_string($_POST['email']);
 /*
 $checkUsername=mysql_query("SELECT username FROM user");
