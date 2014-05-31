@@ -7,6 +7,14 @@ $nickname = mysql_real_escape_string($_POST['nickname']);
 $language = mysql_real_escape_string($_POST['language']);
 $profession = mysql_real_escape_string($_POST['profession']);
 $email = mysql_real_escape_string($_POST['email']);
+if(!$username||!$password||!$nickname||!$language||!$profession||$email){
+echo"NullValue!!";
+}
+else{
+$checkUsername=mysql_query("SELECT username FROM user");
+
+
+}
 /*
 $checkUsername=mysql_query("SELECT username FROM user");
 if($username=mysql_fetch_array($checkUsername)){
