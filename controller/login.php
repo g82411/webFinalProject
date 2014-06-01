@@ -2,15 +2,16 @@
 session_start();
 require 'connect.php';
 $username = mysql_real_escape_string($_POST['username']);
-$username = htmlentities($username, ENT_NOQUOTES,"UTF-8");
 $passwd = mysql_real_escape_string($_POST['password']);
-$passwd = htmlentities($passwd, ENT_NOQUOTES,"UTF-8");
-if($result=mysql_fetch_array(mysql_query("SELECT * FROM User WHERE username='".$username."' and password ='".$passwd."';" )))
+$test=mysql_query("SELECT * FROM User WHERE username='".$username."';" );
+$result==mysql_fetch_array($test);
+if($result["password"]==$password)
 {
-	$jsonRseponse = array("Cookie" => $result['Cookie'],
+	$cookie=md5(md5($usename.$password.date("Y/m/d_H:m:s")));
+	$jsonRseponse = array("Cookie" => $cookie,
 		"confirm" => True);
 	echo json_encode($jsonRseponse);
-	$_SESSION["Cookie"] = $result['Cookie'];
+	$_SESSION["Cookie"] = $cookie;
 }
 else{
 	$jsonRseponse = array("confirm" => False);

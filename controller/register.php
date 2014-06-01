@@ -25,7 +25,6 @@ if($email=mysql_fetch_array($checkEmail)){
 */
 mysql_query("INSERT INTO User(username,password,nickname,Language,profession,email)
 	VALUES('".$username."','".$password."','".$nickname."','".$language."','".$profession."','".$email."');");
-echo $profession;
 
 /*$username = mysql_real_escape_string($_POST['username']);
 $username = htmlentities($username, ENT_NOQUOTES,"UTF-8");
