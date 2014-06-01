@@ -20,7 +20,7 @@ $(function(){
     	'<tr><td><p>commit數</p></td><td><p>'+data.hot+'</p></td></tr>'+
     	'<tr><td><p>提供者</p></td><td><p>'+data.author+'</p></td></tr>'+
     	'<tr><td><p>resource</p></td><td><a href=\"'+data.resource+'\">'+data.resource+'</a></td></tr>'+
-    	'<tr><td><p>type</p></td><td><p>'+data.type+'</p></td></tr>'+
+    	'<tr><td><p>type</p></td><td><p>'+data.profession+'</p></td></tr>'+
     	'<tr><td><p>Language</p></td><td><p>'+data.Language+'</p></td></tr>'
       	);
       

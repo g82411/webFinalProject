@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<article id="bookInformThatUserInput">
+		<div class="input-group" id="bookTitleDiv">
+		<span id="bootTitleSpan" class="input-group-addon" >書名</span>
+			<input id="bookTitle" type="text" class="form-control" placeholder="請在這裡輸入書名或標題" >
+		</div>
+		<div class="input-group" id="authorDiv">
+		<span id="authorSpan" class="input-group-addon" >作者</span>
+			<input id="author" type="text" class="form-control" placeholder="請在這裡輸入作者或擁有者">
+		</div>
+		<div class="input-group" id="imageUrlDiv">
+		<span id="imageUrlSpan" class="input-group-addon" >圖片</span>
+			<input id="imageUrl" type="URL" class="form-control" placeholder="如果有封面或圖片的Url請在這裡輸入" >
+		</div>
+		<div class="input-group" id="ISBNDIV">
+		<span id="ISBNSPAN" class="input-group-addon" >ISBN</span>
+			<input id="ISBN" type="text" class="form-control" placeholder="請在這裡輸入書本的ISBN">
+		</div>
+		<div class="input-group" id="resourceDiv">
+		<span id="resourceSpan" class="input-group-addon" >來源</span>
+			<input id="resource" type="URL" class="form-control" placeholder="請在這裡輸入書本的來源位置" >
+		</div>
+		<select id="language">
+			<option value="default" selected="selected">擅長語言</option>
+			<option value="Japanese">日文</option>
+			<option value="English">英文</option>
+			<option value="French">法文</option>
+			<!--<option value="Else">其他</option>-->
+		</select>
+		<select id="profession">
+			<option value="default" selected="selected">專業</option>
+			<option value="CSIE">資訊工程</option>
+			<option value="Art">藝術</option>
+			<option value="Ecnomic">經濟</option>
+		</select>
+	</article>
+	<button id="newBook" class="btn btn-default">提交</button>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/newBook.js"></script>
+</body>
+</html>
