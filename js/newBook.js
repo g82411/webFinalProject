@@ -1,3 +1,7 @@
+alert(localStorage.getItem("key"));
+if (true) {
+	
+};
 $("#newBook").click(function(){
 	$.post("./controller/newBook.php",
 	{
@@ -8,9 +12,8 @@ $("#newBook").click(function(){
 		"resource":$('input[id="resource"]').val(),
     	"language":$("#language").find(":selected").text(),
 	 	"profession":$("#profession").find(":selected").text(),
-	 	//"UserKey":localStorage['key']
+	 	"UserKey":localStorage.getItem("key");
 	},
 	function(data){
-		alert(data);
 	});
 });
