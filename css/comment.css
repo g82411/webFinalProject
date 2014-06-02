@@ -20,8 +20,15 @@
 	top: -128px;
 	width: 40%;
 }
+
 #emailInput{
 	top:-95px;
+}
+
+.enter_button{
+	position: relative;
+	left: 85%;
+	top: 100px;
 }
 .form-control{
 	height:35px;
@@ -50,9 +57,10 @@
 
 .editable{
 	position: relative;
-	left: 30%;
+	left: 5%;
 }
 .for_textarea{
 	position: relative;
-	width: 400px;
+	width: 80%;
+	left:10%;
 }
