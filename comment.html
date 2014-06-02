@@ -5,75 +5,65 @@
     <title>give a comment</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/comment.css" rel="stylesheet">
+
   </head>
   <body>
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">首頁</a> <!--NavBar 首頁按鈕 -->
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">首頁</a> <!--NavBar 首頁按鈕 -->
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="newBook.html">Newbook</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="newBook.html">Newbook</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     <div>
       <div>
-        <h1 class="book-title">THIS IS A BOOK</h1>
+        <h1 class="book-title" >THIS IS A BOOK</h1>
       </div>
-      <div class="book-cover-place">
-        <img class="book-cover" src="img/lost_book.png" />
-      </div>
-      <div>
-        <asp:TextBox ID="txtEditor" TextMode="MultLine" CssClass="ckeditor" runat="server"></asp:TextBox>
-          <br />
-          <br />
-          <asp:Button ID="btnSubmit" runat="server" Text="確定" onclick="btnSubmit_Click" />
-          <br />
-          <br />
-          <asp:Label ID="lblDisplay" runat="server" Text="Label"></asp:Label>
-      </div>
+      <input id="commitTitile" type="text">
+      <textarea id="commitArea" name="textfield" class="ckeditor" ></textarea>
+      <button id="send_button" class="btn btn-default">submit</button>
     </div>
   </body>
+  <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script> 
-  <script src="js/comment.js"></script>
-  <!-- <script type="text/javascript" src="Scripts/jquery-1.4.1-vsdos.js"></script> -->
-  <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
-  <script type="text/javascript" src="ckeditor/adapters/jquery.js"></script>
+  <script src="js/editComment.js"></script>
 </html>

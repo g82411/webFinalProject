@@ -5,6 +5,7 @@ if(url.indexOf("#")!=-1){
 else{
     document.location.href="./index.html";
 }
+var BID;
 var bid=ary;
 $(function(){ 
   $.ajax({
@@ -23,6 +24,11 @@ $(function(){
     	'<tr><td><p>type</p></td><td><p>'+data.profession+'</p></td></tr>'+
     	'<tr><td><p>Language</p></td><td><p>'+data.Language+'</p></td></tr>'
       	);
+      BID=data.BID;
       
   })
+});
+
+$("#edit").click(function(){
+  document.location.href='./editCommit.html#bid='+BID;
 });
