@@ -13,7 +13,7 @@ var bid=ary;
 $("#send_button").click(function(){
   $.post("./controller/editCommit.php",
   {
-    "content":$('#commitArea').val(),
+    "content":tinymce.getInstanceById(content).getBody().innerHTML,
     "commitTitile":$('input[id="commitTitile"]').val(),
     "bid":bid
   },
@@ -28,6 +28,6 @@ tinymce.init({
         toolbar: "undo redo",
         menubar: false
     });
-    tinymce.init({
-        selector:'textarea',
-    });
+tinymce.init({
+    selector:'textarea',
+});
