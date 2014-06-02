@@ -11,8 +11,7 @@ $("#register").click(function(){
 
 
   },
-  function(data,status){
-	alert($(($('input[id="username"]').val());
-	alert($("#language").find(":selected").text());
+  function(data){
+	alert(data);
   });
 });
