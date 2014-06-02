@@ -4,7 +4,7 @@ $.post("./controller/check_login.php",
 	 	"Key":localStorage.getItem("key")
 	},
 	function(data){
-
+		alert(data);
 	});
 $("#newBook").click(function(){
 	$.post("./controller/newBook.php",
