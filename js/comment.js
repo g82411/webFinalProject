@@ -5,5 +5,5 @@ tinymce.init({
         menubar: false
     });
     tinymce.init({
-        selector:'textarea'
+        selector:'textarea',
     });
