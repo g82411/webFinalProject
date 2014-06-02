@@ -35,8 +35,8 @@ if(preg_match($standard, $email, $check)) {
 			
 	}
    
-
-}*/
+*/
+}
 else{
 	echo"錯誤的Email格式";	
 }
