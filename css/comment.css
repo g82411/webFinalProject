@@ -25,6 +25,23 @@
 	top:-95px;
 }
 
+#send_button{
+	position: relative;
+	left: 75%;
+}
+
+.commitArea{
+	position: relative;
+	width:400px;
+	left:15%;
+}
+
+.commitTitle{
+	position: relative;
+	left: 20%;
+	height: 15px;
+}
+
 .enter_button{
 	position: relative;
 	left: 85%;
@@ -63,4 +80,8 @@
 	position: relative;
 	width: 80%;
 	left:10%;
+}
+.title_mark{
+	position: relative;
+	left: 20%;
 }
