@@ -14,18 +14,15 @@ if(preg_match($standard, $email, $check)) {
 	echo "Success!";
 	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
 	{
-			echo '輸入';
-			$check=mysql_fetch_array(mysql_query("select * from User where username='".$username."' or password='".$password."' or nickname='".$nickname."' or email='".$email."');");
-			if($check !=false){
-				echo ' 重複';
-			}
-			else{
-				echo ' 不重複';
-			}
+	
+		mysql_query("INSERT INTO User(username,password,nickname,Language,profession,email)
+VALUE('".$username."','".$password."','".$nickname."','".$language."','".$profession."','".$email."');");
+	
+		echo '輸入';
 	}
 	else
 	{
-			echo '輸入值為空!';		
+		echo '輸入值為空!';		
 	}
 }
 else{
