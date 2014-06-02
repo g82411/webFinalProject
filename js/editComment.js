@@ -13,15 +13,8 @@ var bid=ary;
 $("#send_button").click(function(){
   $.post("./controller/editCommit.php",
   {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     "content":CKEDITOR.instances.commitArea.getData(),
-=======
-    "content":tinymce.getInstanceById(content).getBody().innerHTML,
->>>>>>> a82c75cd62d51445a1887ef8712111ab60878274
-=======
-    "content":tinymce.getInstanceById(content).getBody().innerHTML,
->>>>>>> a82c75cd62d51445a1887ef8712111ab60878274
     "commitTitile":$('input[id="commitTitile"]').val(),
     "bid":bid
   },
@@ -29,23 +22,4 @@ $("#send_button").click(function(){
     
   });
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a82c75cd62d51445a1887ef8712111ab60878274
 
-tinymce.init({
-        selector: "h1.editable",
-        inline: true,
-        toolbar: "undo redo",
-        menubar: false
-    });
-tinymce.init({
-    selector:'textarea',
-<<<<<<< HEAD
-});
->>>>>>> a82c75cd62d51445a1887ef8712111ab60878274
-=======
-});
->>>>>>> a82c75cd62d51445a1887ef8712111ab60878274
