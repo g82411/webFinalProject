@@ -11,10 +11,11 @@ $standard = "/^[\w]*@[\w-]+(\.[\w-]+)+$/" ;
 $date = date("Y-m-d H:i");
 if(preg_match($standard, $email, $check)) {
 	echo "Sucess!";
-/*	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
+	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
 	{
+			echo '輸入';
 			//新增資料進資料庫語法
-			$sql="insert into User(username,password,nickname,Language,profession,email)
+			/*$sql="insert into User(username,password,nickname,Language,profession,email)
 			values('$username','$password','$nickname','$language','$profession','$email')";
 			if(mysql_query($sql))
 			{
@@ -27,7 +28,7 @@ if(preg_match($standard, $email, $check)) {
 			{
 					echo '新增失敗!';
 					
-			}
+			}*/
 	}
 	else
 	{
@@ -35,7 +36,7 @@ if(preg_match($standard, $email, $check)) {
 			
 	}
    
-*/
+
 }
 else{
 	echo"錯誤的Email格式";	
