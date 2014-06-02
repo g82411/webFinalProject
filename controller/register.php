@@ -15,7 +15,7 @@ if(preg_match($standard, $email, $check)) {
 	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
 	{
 			echo '輸入';
-			if(mysql_fetch_array(mysql_query(select * form User where username='".$username."' or password='".$password."' or nickname='".$nickname."' or email='".$email."'))){
+			if(mysql_query(mysql_fetch_array(select * form User where username='".$username."' or password='".$password."' or nickname='".$nickname."' or email='".$email."'))){
 			
 			echo '  重複';
 			
