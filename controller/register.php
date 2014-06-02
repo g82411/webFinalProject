@@ -19,7 +19,7 @@ if(preg_match($standard, $email, $check)) {
 	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
 	{
 			echo '輸入';
-			if($username == mysql_fetch_array($checkUsername)||$password == mysql_fetch_array($checkPassword))
+			/*if($username == mysql_fetch_array($checkUsername)||$password == mysql_fetch_array($checkPassword))
 			||$nickname == mysql_fetch_array($checkNickname)||$email == mysql_fetch_array($checkEmail)){
 			
 			echo '  重複';
@@ -29,7 +29,7 @@ if(preg_match($standard, $email, $check)) {
 			
 			echo '  沒重複';
 			
-			}
+			}*/
 			//新增資料進資料庫語法
 			/*$sql="insert into User(username,password,nickname,Language,profession,email)
 			values('$username','$password','$nickname','$language','$profession','$email')";
