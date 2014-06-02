@@ -24,60 +24,47 @@ left:750px;
 top:120px;
 }
 
-#recheckpassword{
-position:relative;
-width:300px;
-left:750px;
-top:140px;
-}
-#Recheckpassword{
-position:relative;
-width:200px;
-left:750px;
-top:140px;
-}
-
 #nickname{
 position:relative;
 width:300px;
 left:750px;
-top:160px;
+top:140px;
 }
 #Nickname{
 position:relative;
 width:200px;
 left:750px;
-top:160px;
+top:140px;
 }
 
 #email{
 position:relative;
 width:300px;
 left:750px;
-top:180px;
+top:160px;
 }
 #Email{
 position:relative;
 width:200px;
 left:750px;
-top:180px;
+top:160px;
 }
 
 
 #register{
 position:relative;
 left:720px;
-top:250px;
+top:230px;
 }
 
 #language{
 position:relative;
 left:790px;
-top:200px;
+top:180px;
 }
 
 #profession{
 position:relative;
 left:910px;
-top:200px;
+top:180px;
 }
