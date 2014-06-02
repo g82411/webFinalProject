@@ -1,8 +1,0 @@
-<?php
-if($_COOKIE['permittion']){
-header("location");/繼續/
-}
-else{
-header("location");/進入首頁/
-}
-?>

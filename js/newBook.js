@@ -1,7 +1,11 @@
-alert(localStorage.getItem("key"));
-if (true) {
-	
-};
+
+$.post("./controller/check_login.php",
+	{
+	 	"Key":localStorage.getItem("key")
+	},
+	function(data){
+
+	});
 $("#newBook").click(function(){
 	$.post("./controller/newBook.php",
 	{
@@ -12,7 +16,7 @@ $("#newBook").click(function(){
 		"resource":$('input[id="resource"]').val(),
     	"language":$("#language").find(":selected").text(),
 	 	"profession":$("#profession").find(":selected").text(),
-	 	"UserKey":localStorage.getItem("key");
+	 	"UserKey":localStorage.getItem("key")
 	},
 	function(data){
 	});
