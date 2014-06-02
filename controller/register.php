@@ -7,10 +7,6 @@ $nickname = mysql_real_escape_string($_POST['nickname']);
 $language = mysql_real_escape_string($_POST['language']);
 $profession = mysql_real_escape_string($_POST['profession']);
 $email = mysql_real_escape_string($_POST['email']);
- 	$checkUsername=mysql_query("SELECT username FROM user");
- 	$checkPassword=mysql_query("SELECT password FROM user");
- 	$checkNickname=mysql_query("SELECT nickname FROM user");
- 	$checkEmail=mysql_query("SELECT email FROM user");
 
 $standard = "/^[\w]*@[\w-]+(\.[\w-]+)+$/" ;
 $date = date("Y-m-d H:i");
@@ -19,8 +15,7 @@ if(preg_match($standard, $email, $check)) {
 	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
 	{
 			echo '輸入';
-			/*if($username == mysql_fetch_array($checkUsername)||$password == mysql_fetch_array($checkPassword))
-			||$nickname == mysql_fetch_array($checkNickname)||$email == mysql_fetch_array($checkEmail)){
+			if(mysql_fetch_array(mysql_query(select * form User where username='".$username."' or password='".$password."' or nickname='".$nickname."' or email='".$email."'))){
 			
 			echo '  重複';
 			
@@ -29,7 +24,7 @@ if(preg_match($standard, $email, $check)) {
 			
 			echo '  沒重複';
 			
-			}*/
+			}
 			//新增資料進資料庫語法
 			/*$sql="insert into User(username,password,nickname,Language,profession,email)
 			values('$username','$password','$nickname','$language','$profession','$email')";
