@@ -10,7 +10,8 @@ $email = mysql_real_escape_string($_POST['email']);
 $standard = "/^[\w]*@[\w-]+(\.[\w-]+)+$/" ;
 $date = date("Y-m-d H:i");
 if(preg_match($standard, $email, $check)) {
-	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
+	echo "Sucess!";
+/*	if($username != null && $password != null  && $nickname!= null && $language!= null && $profession!= null && $email!= null )
 	{
 			//新增資料進資料庫語法
 			$sql="insert into User(username,password,nickname,Language,profession,email)
@@ -18,24 +19,24 @@ if(preg_match($standard, $email, $check)) {
 			if(mysql_query($sql))
 			{
 					echo '新增成功!';
-					echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';//這行怎麼改?
+					
 				$sql="insert into User(Cookie)
 			values(md5($username.$password.$date))";	
 			}
 			else
 			{
 					echo '新增失敗!';
-					echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';//這行是啥??
+					
 			}
 	}
 	else
 	{
 			echo '輸入值為空!';
-			echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';//幫一下吧
+			
 	}
    
 
-}
+}*/
 else{
 	echo"錯誤的Email格式";	
 }
