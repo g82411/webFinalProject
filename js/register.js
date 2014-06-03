@@ -11,4 +11,5 @@ $("#register").click(function(){
   function(data){
 	alert(data);
   });
+  window.location.assign("http://lmz8241.tk/webFinalProject/index.html");
 });
