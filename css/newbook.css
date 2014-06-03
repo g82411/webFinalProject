@@ -1,0 +1,83 @@
+#bootTitleSpan{
+		width:70px;
+		position:relative;
+}
+
+#bookTitle{
+	width:300px;
+		position:relative;
+}
+
+#authorSpan{
+	width:70px;
+		position:relative;
+		top:10px;
+}
+
+#author{
+	width:300px;
+		position:relative;
+		top:10px;
+}
+
+#imageUrlSpan{
+	width:70px;
+	position:relative;
+	top:20px;
+}
+
+#imageUrl{
+	width:300px;
+	position:relative;
+	top:20px;
+}
+
+#ISBNSPAN{
+	width:70px;
+	position:relative;
+	top:30px;
+}
+
+#ISBN{
+	width:300px;
+	position:relative;
+	top:30px;
+}
+
+#resourceSpan{
+	width:70px;
+	position:relative;
+	top:40px;
+}
+
+#resource{
+	width:300px;
+	position:relative;
+	top:40px;
+}
+
+#language{
+	position:relative;
+	top:58px;
+	left:20%
+}
+
+#profession{
+	position:relative;
+	top:90px;
+	left:6.7%
+}
+
+#newBook{
+	width:90px;
+	position:relative;
+	top:150px;
+	left:46.6%;
+}
+
+#bookInformThatUserInput{
+	width:50%;
+	position:relative;
+	left:37%;
+	top:30px;
+}

@@ -5,6 +5,7 @@ if(url.indexOf("#")!=-1){
 else{
     document.location.href="./index.html";
 }
+var BID;
 var bid=ary;
 $(function(){ 
   $.ajax({
@@ -23,6 +24,20 @@ $(function(){
     	'<tr><td><p>type</p></td><td><p>'+data.profession+'</p></td></tr>'+
     	'<tr><td><p>Language</p></td><td><p>'+data.Language+'</p></td></tr>'
       	);
+      BID=data.BID;
       
+  })
+});
+
+$("#edit").click(function(){
+  document.location.href='./comment.html#bid='+BID;
+});
+$(function(){ 
+  $.ajax({
+    type: "GET",
+    url: "./controller/dump_commet.php?bid="+bid
+  })
+  .done(function(data) {
+      $('#accordion').html(data);
   })
 });

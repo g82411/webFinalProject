@@ -1,22 +1,16 @@
 
 <?php
 require 'connect.php';
-$commitA=mysql_query("SELECT * FROM commit;");
-while($commitResult=mysql_fetch_array($commitA)){
-$username=mysql_fetch_array(mysql_query("SELECT username FROM User where UID=".$commitResult['UID'].";"));
-echo  "<div class=\"accordion-group\">";
-echo  "<div class=\"accordion-heading\">"; 
-echo      "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion2\" href=\"#collapse".$commitResult['UID']."\">";
-echo      $commitResult['title']."   ".$username."    ".$commitResult['date'];
-echo      "</a>";
-echo    "</div>";
-echo    "<div id=\"collapse".$commitResult['UID']."\" class=\"accordion-body collapse in\">";
-echo      "<div class=\"accordion-inner\">";
-echo        $commitResult['content'];
-echo      "</div>";
-echo    "</div>";
-echo  "</div>";
+$bid=$_GET['bid'];
+$commentA=mysql_query("SELECT * FROM commit WHERE BID='".$bid."';");
+while ($result=mysql_fetch_array($commentA)) {
+	echo "<div class=\"panel panel-default\">";
+    echo "<div class=\"panel-heading\">";
+	echo "<h4 class=\"panel-title\">";
+    echo "<a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse".$result["CID"]."\">";
+    echo $result["title"]."</a></h4></div>";
+    echo "<div id=collapse".$result["CID"]."class=\"panel-collapse collapse\">";
+    echo "<div class=\"panel-body\">".$result["content"]."</div></div></div>";
 }
- 
 mysql_close();
 ?>

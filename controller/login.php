@@ -8,6 +8,7 @@ $result==mysql_fetch_array($test);
 if($result["password"]==$password)
 {
 	$cookie=md5(md5($usename.$password.date("Y/m/d_H:m:s")));
+	mysql_query("UPDATE User SET Cookie ='".$cookie."' WHERE username ='".$username."';");
 	$jsonRseponse = array("Cookie" => $cookie,
 		"confirm" => True);
 	echo json_encode($jsonRseponse);

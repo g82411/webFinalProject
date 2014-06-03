@@ -8,7 +8,7 @@ $profession=htmlentities(mysql_escape_string($_POST['profession']));
 $resource=htmlentities(mysql_escape_string($_POST['resource']));
 $imageUrl=htmlentities(mysql_escape_string($_POST['imageUrl']));
 
-mysql_query("INSERT INTO Book VALUES ('NULL','49','".$bookTitle."','".$author."','".$imageUrl."','".$ISBN."','".date("Y-m-d")."','0','".$resource."','".$profession."','".$language."');");
+mysql_query("INSERT INTO Book VALUES ('NULL','51','".$bookTitle."','".$author."','".$imageUrl."','".$ISBN."','".date("Y-m-d")."','0','".$resource."','".$profession."','".$language."');");
 echo $bookTitle;
 mysql_close();
 ?>
