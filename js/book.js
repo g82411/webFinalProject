@@ -30,6 +30,7 @@ $(function(){
 });
 
 $("#edit").click(function(){
+<<<<<<< HEAD
   document.location.href='./comment.html#bid='+BID;
 });
 $(function(){ 
@@ -40,4 +41,7 @@ $(function(){
   .done(function(data) {
       $('#accordion').html(data);
   })
+=======
+  document.location.href='./editCommit.html#bid='+BID;
+>>>>>>> 3d8b2ecfe1d7d7a484d4d9d9690f02672092cc7c
 });

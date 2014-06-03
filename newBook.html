@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
 <meta charset="UTF-8">
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -92,4 +93,98 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/newBook.js"></script>
 </body>
+=======
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/newbook.css" rel="stylesheet">
+    <title>放入新書</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">首頁</a> <!--NavBar 首頁按鈕 -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="newBook.html">Newbook</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <article id="bookInformThatUserInput">
+		  <div class="input-group" id="bookTitleDiv">
+		    <span id="bootTitleSpan" class="input-group-addon" >書名</span>
+        <input id="bookTitle" type="text" class="form-control" placeholder="請在這裡輸入書名或標題" >
+		  </div>
+		  <div class="input-group" id="authorDiv">
+		    <span id="authorSpan" class="input-group-addon" >作者</span>
+        <input id="author" type="text" class="form-control" placeholder="請在這裡輸入作者或擁有者">
+		  </div>
+		  <div class="input-group" id="imageUrlDiv">
+		    <span id="imageUrlSpan" class="input-group-addon" >圖片</span>
+		    <input id="imageUrl" type="URL" class="form-control" placeholder="如果有封面或圖片的Url請在這裡輸入" >
+		  </div>
+		  <div class="input-group" id="ISBNDIV">
+		    <span id="ISBNSPAN" class="input-group-addon" >ISBN</span>
+		    <input id="ISBN" type="text" class="form-control" placeholder="請在這裡輸入書本的ISBN">
+		  </div>
+		  <div class="input-group" id="resourceDiv">
+		    <span id="resourceSpan" class="input-group-addon" >來源</span>
+		    <input id="resource" type="URL" class="form-control" placeholder="請在這裡輸入書本的來源位置" >
+		  </div>
+		  <select id="language">
+		    <option value="default" selected="selected">擅長語言</option>
+		    <option value="Japanese">日文</option>
+		    <option value="English">英文</option>
+		    <option value="French">法文</option>
+        <!--<option value="Else">其他</option>-->
+		  </select>
+		  <select id="profession">
+		    <option value="default" selected="selected">專業</option>
+		    <option value="CSIE">資訊工程</option>
+		    <option value="Art">藝術</option>
+		    <option value="Ecnomic">經濟</option>
+		  </select>
+    </article>
+    <button id="newBook" class="btn btn-default">提交</button>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/newBook.js"></script>
+  </body>
+>>>>>>> 3d8b2ecfe1d7d7a484d4d9d9690f02672092cc7c
 </html>

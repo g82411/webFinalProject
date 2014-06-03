@@ -25,6 +25,26 @@
 	top:-95px;
 }
 
+<<<<<<< HEAD
+=======
+#send_button{
+	position: relative;
+	left: 75%;
+}
+
+.commitArea{
+	position: relative;
+	width:400px;
+	left:15%;
+}
+
+.commitTitle{
+	position: relative;
+	left: 20%;
+	height: 15px;
+}
+
+>>>>>>> 3d8b2ecfe1d7d7a484d4d9d9690f02672092cc7c
 .enter_button{
 	position: relative;
 	left: 85%;
@@ -56,6 +76,7 @@
 }
 
 .editable{
+<<<<<<< HEAD
 	position: relative;
 	left: 5%;
 }
@@ -64,3 +85,17 @@
 	width: 80%;
 	left:10%;
 }
+=======
+	position: relative;
+	left: 5%;
+}
+.for_textarea{
+	position: relative;
+	width: 80%;
+	left:10%;
+}
+.title_mark{
+	position: relative;
+	left: 20%;
+}
+>>>>>>> 3d8b2ecfe1d7d7a484d4d9d9690f02672092cc7c

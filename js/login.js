@@ -6,19 +6,11 @@ $("#register").click(function(){
 $("#login").click(function(){
   $.post("./controller/login.php",
   {
-    "username":$('input[id="username"]').val(),
-    "password":$('input[id="password"]').val()
+    "content":$('#commitArea').val(),
+    "commitTitile":$('input[id="commitTitile"]').val(),
+    "bid":bid
   },
   function(data){
-  	data=JSON.parse(data);
-    alert(data.confirm);
-  	if(data.confirm){
-  		alert("登入成功");
-  		localStorage.setItem("key", data.Cookie);
-  		document.location.href="index.html";
-  	}
-  	else{
-  		alert("登入失敗,請檢查帳號密碼");
-  	}
+  	
 	});
 });

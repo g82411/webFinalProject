@@ -13,8 +13,14 @@ var bid=ary;
 $("#send_button").click(function(){
   $.post("./controller/editCommit.php",
   {
+<<<<<<< HEAD
     "content":CKEDITOR.instances.commitArea.getData(),
     "commitTitle":$('input[id="commitTitile"]').val(),
+=======
+
+    "content":CKEDITOR.instances.commitArea.getData(),
+    "commitTitile":$('input[id="commitTitile"]').val(),
+>>>>>>> 3d8b2ecfe1d7d7a484d4d9d9690f02672092cc7c
     "bid":bid
   },
   function(data){
