@@ -1,4 +1,4 @@
-$("#registe").click(function(){
+$("#register").click(function(){
   $.post("controller/register.php",
   {
     "username":$('input[id="username"]').val(),
